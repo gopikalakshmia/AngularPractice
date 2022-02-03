@@ -1,0 +1,12 @@
+<p>userdetails works!</p>
+
+{{user.name}}<br/>
+<a href="{{user.email }}">{{user.email}}</a>
+
+<div>
+<button type="button" class="btn btn-primary" (click)="createUser()">create user</button>
+<button type="button" class="btn btn-secondary" (click)="updateUser()">update user</button>
+<button type="button" class="btn btn-success" (click)="deleteUser()">delete user</button>
+<button type="button" class="btn btn-success" (click)="getUserPosts()">Get user posts</button>
+</div>
+<pre>{{posts|async|json}}</pre>
